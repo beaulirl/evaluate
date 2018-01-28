@@ -1,0 +1,40 @@
+.evaluate {
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.mark-container:first-child {
+	margin: 0;
+}
+
+.mark-container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: column;
+	border-right: solid 1px rgba(197, 197, 197, 1);
+	width: 250px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+}
+
+.header {
+	font-family: "Open Sans";
+	font-weight: 600;
+	font-size: 16px;
+	color: black;
+}
+
+.header-description {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 16px;
+	color: rgba(130, 130, 130, 1);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

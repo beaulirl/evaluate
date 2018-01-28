@@ -1,0 +1,42 @@
+.mark {
+    display: flex;
+    margin-top: 20px;
+}
+
+.mark-value {
+	font-family: "Alegreya Sans";
+	font-weight: 800;
+	font-size: 64px;
+	color: rgba(60, 60, 60, 0.8);
+	height: 70px;
+	width: 70px;
+	border: dashed 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	margin-left: 25px;
+}
+
+.mark-description {
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-size: 14px;
+	color: rgba(65, 65, 65, 1);
+	margin-right: 35px;
+	margin-left: 25px;
+	border-style: dashed;
+	border-color: rgba(0, 0, 0, 0.2);
+	border-width: 1px;
+	width: 320px;
+}
+
+.mark:first-child {
+	margin: 0; 
+}
+
+.mark-author {
+	font-family: "Open Sans";
+	font-weight: 500;
+	font-style: italic;
+	font-size: 14px;
+	color: rgba(197, 197, 197, 1);
+}
+
