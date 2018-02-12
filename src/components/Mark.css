@@ -1,6 +1,5 @@
 .mark {
     display: flex;
-    margin-top: 20px;
 }
 
 .mark-value {
@@ -26,6 +25,7 @@
 	border-color: rgba(0, 0, 0, 0.2);
 	border-width: 1px;
 	width: 320px;
+	height: 70px;
 }
 
 .mark:first-child {
