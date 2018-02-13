@@ -25,7 +25,6 @@
 	border-color: rgba(0, 0, 0, 0.2);
 	border-width: 1px;
 	width: 320px;
-	height: 70px;
 }
 
 .mark:first-child {
@@ -40,3 +39,18 @@
 	color: rgba(197, 197, 197, 1);
 }
 
+.well-valued {
+	color: rgba(0, 160, 9, 0.6);
+}
+
+.middle-valued {
+	color: rgba(197, 197, 197, 1);
+}
+
+.low-valued {
+	color: rgba(207, 0, 0, 0.6);
+}
+
+.unvalued {
+	color: rgba(60, 60, 60, 0.8);
+}

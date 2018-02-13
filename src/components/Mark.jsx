@@ -8,34 +8,33 @@ export default class Mark extends Component {
   	this.handleChange = this.handleChange.bind(this);
   	this.state = {
   		value: '',
-      divStyle: {
-        color: 'black',
-      },
+      divStyle: 'mark-value',
   	};
   }
 
   handleChange(event) {
-  	const values = ['A', 'B', 'C', 'D', 'E', 'F', '', 'a', 'b', 'c', 'd', 'e', 'f'];
     const colorDict = {
-      'A': 'green',
-      'B': 'green',
-      'C': 'yellow',
-      'D': 'brown',
-      'F': 'red',
+      'A': 'well-valued',
+      'B': 'well-valued',
+      'C': 'middle-valued',
+      'D': 'low-valued',
+      'E': 'low-valued',
+      'F': 'unvalued',
     };
     const value = event.target.value.toUpperCase();
-  	if (values.includes(value)) {
+    console.log(event.target.value);
+  	if (Object.keys(colorDict).includes(value) || value === '') {
         this.setState({
           value: value,
-          divStyle: {color: colorDict[value]}, 
+          divStyle: "mark-value " + colorDict[value],
         });
       }
     }
-  
+
   render() {
     return (
       <div className="mark">
-        <input type="text" className="mark-value" style={this.state.divStyle} onChange={this.handleChange} value={this.state.value}/>
+        <input type="text" className={this.state.divStyle} onChange={this.handleChange} value={this.state.value}/>
         <div className="mark-description" contentEditable="true"></div>
       </div>
       );

@@ -4,12 +4,9 @@
 	margin-top: 50px;
 }
 
-.mark-container:first-child {
-	margin: 0;
-}
-
 .mark-container {
 	display: flex;
+	align-items: flex-start;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
